@@ -1,2 +1,0 @@
-2023-11-10_09:34:32 ------> Error ---> Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessResourceUsageException: could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
-

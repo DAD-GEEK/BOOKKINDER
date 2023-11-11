@@ -1,7 +1,0 @@
-RECIBO: 2023-11-10_09:34:32 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
-RECIBO: 2023-11-10_09:37:05 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
-RESPONDO: 2023-11-10_09:37:07 Token created successfully: TokenResponseDto [jwtToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk2NDg2NTYsImlhdCI6MTY5OTY0ODYyNiwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.M2vsUPfllrIY2L0Q09PHpNJKLuc7DlWG2ftWXQRzIY4]  IP_CONSUMO: 0:0:0:0:0:0:0:1
-
-RECIBO: 2023-11-10_09:37:24 AutenticationController Validando Token IP_CONSUMO: 0:0:0:0:0:0:0:1
-RESPONDO: 2023-11-10_09:37:24 Token Valido: Successfully authorized IP_CONSUMO: 0:0:0:0:0:0:0:1
-

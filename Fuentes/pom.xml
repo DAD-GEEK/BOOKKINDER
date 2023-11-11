@@ -8,13 +8,13 @@
         <version>2.7.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.konecta</groupId>
-    <artifactId>apiDemo</artifactId>
+    <groupId>com.grootgeek</groupId>
+    <artifactId>ApiBookKinder</artifactId>
     <version>1.0.0</version>
 
     <packaging>jar</packaging>
-    <name>apidemo</name>
-    <description>apidemo</description>
+    <name>ApiBookKinder</name>
+    <description>ApiBookKinder</description>
     <properties>
         <java.version>11</java.version>
     </properties>
