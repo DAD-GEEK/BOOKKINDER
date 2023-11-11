@@ -1,0 +1,516 @@
+{
+	"info": {
+		"_postman_id": "c4f48958-c660-4fd7-943d-1f0404b5ba34",
+		"name": "ApiBookKinder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15716213"
+	},
+	"item": [
+		{
+			"name": "UserAPI",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"lejodurango@gmail.com\",\r\n    \"password\":\"i96/x0rqiJ8m\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/publico/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"publico",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ValidateToken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3MjQ5NDMsImlhdCI6MTY5OTcyNDkxMywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.IObBHRDFjFXBk46NTIR5kU3kmyFp66niwbUAFytHJzc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/ValidateToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"ValidateToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserAPP",
+			"item": [
+				{
+					"name": "NewUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NTU1MDcsImlhdCI6MTY5OTcyNTUwNywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.5cQ5W-YSVYoquyHb9ZhaQhPXQhb1UWcPhnnm7qmMTiQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba3@gmail.com\",\r\n    \"password\": \"4rT7S#mU2)Wz\",\r\n    \"name\": \"prueba\",\r\n    \"lastName\": \"2\",\r\n    \"phone\": \"54561516\",\r\n    \"photo\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NDUxNTksImlhdCI6MTY5OTcxNTE1OSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.JgoOSo3smym7EDVqXUQSAaGudXjhJIm0NeCw7263O4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba1@gmail.com\",\r\n    \"password\": \"4rT7S#sdadasdasd)Wz\",\r\n    \"name\": \"jJAJAJAJAJAJ\",\r\n    \"lastName\": \"upHJWJWJWJWdate\",\r\n    \"phone\": \"115656184\",\r\n    \"role\": \"\",\r\n    \"rating\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NDUxNTksImlhdCI6MTY5OTcxNTE1OSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.JgoOSo3smym7EDVqXUQSAaGudXjhJIm0NeCw7263O4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba3@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "readAllUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NDUxNTksImlhdCI6MTY5OTcxNTE1OSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.JgoOSo3smym7EDVqXUQSAaGudXjhJIm0NeCw7263O4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/read/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"read",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserAuthenticate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NTU1MDcsImlhdCI6MTY5OTcyNTUwNywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.5cQ5W-YSVYoquyHb9ZhaQhPXQhb1UWcPhnnm7qmMTiQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba3@gmail.com\",\r\n    \"password\": \"4rT7S#mU2)Wz\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BOOKS",
+			"item": [
+				{
+					"name": "NewBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk2ODgyMDcsImlhdCI6MTY5OTY1ODIwNywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.qlSBaq3vgktvtVesA5XkuBDLBY8ADOW2kO6cc86B6UE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ID\": \"\",\r\n  \"isbn\": \"\",\r\n  \"name\": \"\",\r\n  \"author\": \"\",\r\n  \"category\": \"\",\r\n  \"sellerUser\": \"\",\r\n  \"floatQuality\": \"\",\r\n  \"price\": \"\",\r\n  \"quantity\": \"\",\r\n  \"description\": \"\",\r\n  \"observations\": \"\",\r\n  \"OnSale\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/book/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"book",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NDUxNTksImlhdCI6MTY5OTcxNTE1OSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.JgoOSo3smym7EDVqXUQSAaGudXjhJIm0NeCw7263O4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba1@gmail.com\",\r\n    \"password\": \"4rT7S#mU4)Wz\",\r\n    \"name\": \"pruebaupdate\",\r\n    \"lastName\": \"update\",\r\n    \"phone\": \"5456151aaa6\",\r\n    \"role\": \"1\",\r\n    \"rating\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NDUxNTksImlhdCI6MTY5OTcxNTE1OSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.JgoOSo3smym7EDVqXUQSAaGudXjhJIm0NeCw7263O4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "readAllBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NDUxNTksImlhdCI6MTY5OTcxNTE1OSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.JgoOSo3smym7EDVqXUQSAaGudXjhJIm0NeCw7263O4I",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/read/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"read",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserAuthenticate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk2ODgyMDcsImlhdCI6MTY5OTY1ODIwNywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.qlSBaq3vgktvtVesA5XkuBDLBY8ADOW2kO6cc86B6UE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba1@gmail.com\",\r\n    \"password\": \"4rT7S#mU2)Wz\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/ApiBookKinder/user/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"ApiBookKinder",
+								"user",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/ApiBookKinder/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"ApiBookKinder",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

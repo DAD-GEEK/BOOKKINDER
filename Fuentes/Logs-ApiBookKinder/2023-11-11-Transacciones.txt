@@ -1,0 +1,201 @@
+RECIBO: 2023-11-11_12:16:16 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_12:16:17 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk2ODgxNzcsImlhdCI6MTY5OTY1ODE3NywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.6D_GT7izUw4KMEa9qQdhGo5IPgs0x9nUeGa-At8soUk'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_12:16:46 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_12:16:47 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk2ODgyMDcsImlhdCI6MTY5OTY1ODIwNywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.qlSBaq3vgktvtVesA5XkuBDLBY8ADOW2kO6cc86B6UE'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_12:16:58 AutenticationController Validando Token IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_12:16:58 Token Valido: Successfully authorized IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_12:17:22 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_12:17:22 User-001 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_12:20:03 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_12:20:04 User-001 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_12:22:15 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_12:22:16 User created successfully: UserAppEntity{email='prueba@gmail.com', password='4rT7S#mU2)Wz', name='Prueba', lastName='1', phone='54561516', role='0'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_12:25:24 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_12:25:25 User created successfully: UserAppEntity{email='prueba@gmail.com', password='4rT7S#mU2)Wz', name='Prueba', lastName='1', phone='54561516', role='0'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_12:47:17 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RECIBO: 2023-11-11_01:17:36 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:21:12 User-02 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:22:50 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:23:14 User-02 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:24:32 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:25:27 User created successfully: UserAppEntity{email='prueba@gmail.com', password='4rT7S#mU2)Wz', name='Prueba', lastName='1', phone='54561516', role='1', rating='0'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:25:43 UserController Autenticando al usuario APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:26:11 User-01 username: prueba@gmail.com User already exists IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:30:19 UserController Autenticando al usuario APP prueba2@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:30:21 User-02 username: prueba2@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:30:57 UserController Autenticando al usuario APP prueba2@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:31:48 User-02 username: prueba2@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:33:31 UserController Autenticando al usuario APP prueba2@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:33:32 User created successfully: UserAppEntity{email='prueba2@gmail.com', password='$2a$10$UUqIDEnVX7IS8NStGQrj1OXvj022pl567EhUSO6YQESI1AdCjO2NK', name='prueba', lastName='2', phone='54561516', role='1', rating='0'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:35:09 UserController Autenticando al usuario APP prueba2@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:35:09 User-01 username: prueba2@gmail.com User already exists IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:36:00 UserController Autenticando al usuario APP prueba2@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:36:00 User-01 username: prueba2@gmail.com User already exists IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:36:11 UserController Autenticando al usuario APP prueba0@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RECIBO: 2023-11-11_01:36:30 UserController Autenticando al usuario APP prueba0@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:36:41 User created successfully: UserAppEntity{email='prueba0@gmail.com', password='[PROTECTED]', name='prueba', lastName='2', phone='54561516', role='0', rating='null'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RESPONDO: 2023-11-11_01:36:42 User-02 username: prueba0@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:36:58 UserController Autenticando al usuario APP prueba0@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:36:59 User-01 username: prueba0@gmail.com User already exists IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_01:37:38 UserController Autenticando al usuario APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_01:37:39 User created successfully: UserAppEntity{email='prueba1@gmail.com', password='[PROTECTED]', name='prueba', lastName='2', phone='54561516', role='0', rating='null'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:01:50 AutenticationController Authenticating user APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:01:50 ErrorUser-02 ErrorUser-02 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:06:39 AutenticationController Authenticating user APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:06:40 ErrorUser-02 ErrorUser-02 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:06:51 AutenticationController Authenticating user APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:06:51 ErrorUser-02 ErrorUser-02 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:13:24 AutenticationController Authenticating user APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:14:13 ErrorUser-02 ErrorUser-02 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:16:26 AutenticationController Authenticating user APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:16:27 ErrorUser-02 ErrorUser-02 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:16:32 AutenticationController Authenticating user APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:16:32 ErrorUser-02 ErrorUser-02 username: prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:16:54 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:16:54 ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:17:12 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:17:25 ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:17:32 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:21:35 ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:24:36 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:25:37 User Authenticate successfully: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:28:37 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:28:37 User Authenticate successfully: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:28:46 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:28:47 User Authenticate successfully: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:28:50 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:28:50 User Authenticate successfully: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:29:03 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:29:03 ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:29:14 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:29:14 User Authenticate successfully: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:29:21 AutenticationController Authenticating user APP prueba4@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:29:21 ErrorUser-02 ErrorUser-02 username: prueba4@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_02:29:33 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_02:29:33 User Authenticate successfully: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_04:05:57 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_04:05:59 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NDUxNTksImlhdCI6MTY5OTcxNTE1OSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.JgoOSo3smym7EDVqXUQSAaGudXjhJIm0NeCw7263O4I'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_04:06:34 AutenticationController Update user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_04:08:47 User update successfully: UserAppEntity{email='prueba1@gmail.com', password='[PROTECTED]', name='pruebaupdate', lastName='update', phone='5456151aaa6', role='1', rating='5'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_04:10:44 AutenticationController Update user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RECIBO: 2023-11-11_04:11:58 AutenticationController Update user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RECIBO: 2023-11-11_04:15:37 AutenticationController Update user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_04:15:44 User update successfully: UserAppEntity{email='prueba1@gmail.com', password='[PROTECTED]', name='pruebaupdate2', lastName='update', phone='5456151aaa6', role='1', rating='5'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_04:48:21 AutenticationController Delete user APP prueba@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_04:49:07 User delete successfully: prueba@gmail.com  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_05:07:02 AutenticationController Read all users APP  IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_05:07:31 Users Read successfully: Usuarios encontrados = 2  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_05:09:21 AutenticationController Read all users APP  IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_05:09:21  Usuarios encoUsers Read successfully:ntrados = 2  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:42:43 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:42:45 Token created successfully: TokenResponseDto{typetoken='null', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3MjQ1NzMsImlhdCI6MTY5OTcyNDU2NCwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.DEnXqRdT61fTY20FRv5ZIpSbt5rt4r4L3pUfEq2ZnA0'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:43:10 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:43:11 Token created successfully: TokenResponseDto{typetoken='null', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3MjQ2MDAsImlhdCI6MTY5OTcyNDU5MSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.XElBqdNoGwpwE0GRdNGj6QgzodmAk5M_sYhTAhmANq8'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:43:12 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:43:13 Token created successfully: TokenResponseDto{typetoken='null', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3MjQ2MDIsImlhdCI6MTY5OTcyNDU5MywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.zamD_TCn4PHYE5_olJDI-bPhdjFh4EfeA0JZ7puUI3Y'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:45:52 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:45:53 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3MjQ3NjIsImlhdCI6MTY5OTcyNDc1MywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.RzOKH6IB8DjhTwF-qlsnI8czRW78cPUFLZ_CbTUL5XU'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:46:01 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:46:02 TK-001 TK-001 username: lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:46:50 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:46:51 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3MjQ4MjAsImlhdCI6MTY5OTcyNDgxMSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.3LCLigIExaR9cp4tjH5kd6oUT6EqRYv9htoT4s85QMA'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:47:14 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:47:15 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3MjQ4NDQsImlhdCI6MTY5OTcyNDgzNSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.dT8oWke_Pqp4D8hm_Q_i6JmOJCTMwtN1BW6WXjfZKHo'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:48:32 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:48:34 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3MjQ5NDMsImlhdCI6MTY5OTcyNDkxMywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.IObBHRDFjFXBk46NTIR5kU3kmyFp66niwbUAFytHJzc'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:48:45 AutenticationController Validando Token IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:48:45 Token Valido: Successfully authorized IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:52:19 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:52:21 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NTUxNDEsImlhdCI6MTY5OTcyNTE0MSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.QS8KQw814PrDImPfuDcnyhAbBdq31tmLjtTK4tTbEYc'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:58:26 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:58:27 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk3NTU1MDcsImlhdCI6MTY5OTcyNTUwNywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.5cQ5W-YSVYoquyHb9ZhaQhPXQhb1UWcPhnnm7qmMTiQ'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_06:58:57 UserController Create user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_06:58:58 User-01 username: prueba1@gmail.com User already exists IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:06:03 UserController Create user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:06:04 User-01 username: prueba1@gmail.com User already exists IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:06:13 UserController Create user APP prueba2@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:06:14 User created successfully: UserAppEntity{email='prueba2@gmail.com', password='[PROTECTED]', name='prueba', lastName='2', phone='54561516', role='0', rating='null'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:06:50 UserController Create user APP prueba3@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:06:51 User created successfully: UserAppEntity{email='prueba3@gmail.com', password='[PROTECTED]', name='prueba', lastName='2', phone='54561516', role='0', rating='null'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:10:26 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:10:26 ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:11:15 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:11:15 ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:11:21 AutenticationController Authenticating user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:11:21 ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:12:14 AutenticationController Authenticating user APP prueba3@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:12:15 User Authenticate successfully: prueba3@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:16:48 AutenticationController Update user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:16:49 User update successfully: UserAppEntity{email='prueba1@gmail.com', password='[PROTECTED]', name='jJAJAJAJAJAJ', lastName='upHJWJWJWJWdate', phone='115656184', role='0', rating='2'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:17:31 AutenticationController Update user APP prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:17:32 User update successfully: UserAppEntity{email='prueba1@gmail.com', password='[PROTECTED]', name='jJAJAJAJAJAJ', lastName='upHJWJWJWJWdate', phone='115656184', role='0', rating='2'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:20:14 AutenticationController Delete user APP prueba3@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:20:15 User delete successfully: prueba3@gmail.com  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
+RECIBO: 2023-11-11_07:20:47 AutenticationController Read all users APP  IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-11_07:20:47 Users Read successfully: Usuarios encontrados = 3  IP_CONSUMO: 0:0:0:0:0:0:0:1
+

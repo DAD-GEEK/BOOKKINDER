@@ -1,0 +1,102 @@
+2023-11-11_12:17:22 ------> Error Save New User prueba@gmail.comcould not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+
+2023-11-11_12:17:22 ------> User-001 username: prueba@gmail.com
+
+2023-11-11_12:20:04 ------> Error Save New User prueba@gmail.comcould not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+
+2023-11-11_12:20:04 ------> User-001 username: prueba@gmail.com
+
+2023-11-11_01:19:12 ------> User not Foundprueba@gmail.com
+
+2023-11-11_01:21:00 ------> Error Save New User prueba@gmail.comNo default constructor for entity:  : com.grootgeek.apibookkinder.entities.UserAppEntity; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : com.grootgeek.apibookkinder.entities.UserAppEntity
+
+2023-11-11_01:21:11 ------> User-02 username: prueba@gmail.com
+
+2023-11-11_01:22:51 ------> User not Foundprueba@gmail.com
+
+2023-11-11_01:23:09 ------> Error Save New User prueba@gmail.comNo default constructor for entity:  : com.grootgeek.apibookkinder.entities.UserAppEntity; nested exception is org.hibernate.InstantiationException: No default constructor for entity:  : com.grootgeek.apibookkinder.entities.UserAppEntity
+
+2023-11-11_01:23:14 ------> User-02 username: prueba@gmail.com
+
+2023-11-11_01:24:34 ------> User not Foundprueba@gmail.com
+
+2023-11-11_01:30:20 ------> User not Foundprueba2@gmail.com
+
+2023-11-11_01:30:21 ------> Error Save New User prueba2@gmail.comcould not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+
+2023-11-11_01:30:21 ------> User-02 username: prueba2@gmail.com
+
+2023-11-11_01:30:58 ------> User not Foundprueba2@gmail.com
+
+2023-11-11_01:31:40 ------> Error Save New User prueba2@gmail.comcould not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+
+2023-11-11_01:31:48 ------> User-02 username: prueba2@gmail.com
+
+2023-11-11_01:33:31 ------> User not Foundprueba2@gmail.com
+
+2023-11-11_01:36:12 ------> User not Foundprueba0@gmail.com
+
+2023-11-11_01:36:30 ------> User not Foundprueba0@gmail.com
+
+2023-11-11_01:36:42 ------> Error Save New User prueba0@gmail.comcould not execute statement; SQL [n/a]; constraint [ADMIN.USERS_BOOKKINDER_PK]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+
+2023-11-11_01:36:42 ------> User-02 username: prueba0@gmail.com
+
+2023-11-11_01:37:38 ------> User not Foundprueba1@gmail.com
+
+2023-11-11_02:01:50 ------> ErrorUser-02 ErrorUser-02 username: prueba@gmail.com
+
+2023-11-11_02:06:40 ------> ErrorUser-02 ErrorUser-02 username: prueba@gmail.com
+
+2023-11-11_02:06:51 ------> ErrorUser-02 ErrorUser-02 username: prueba@gmail.com
+
+2023-11-11_02:14:13 ------> ErrorUser-02 ErrorUser-02 username: prueba@gmail.com
+
+2023-11-11_02:16:27 ------> ErrorUser-02 ErrorUser-02 username: prueba@gmail.com
+
+2023-11-11_02:16:32 ------> ErrorUser-02 ErrorUser-02 username: prueba@gmail.com
+
+2023-11-11_02:16:54 ------> ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com
+
+2023-11-11_02:17:25 ------> ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com
+
+2023-11-11_02:21:35 ------> ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com
+
+2023-11-11_02:29:03 ------> ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com
+
+2023-11-11_02:29:21 ------> User not Foundprueba4@gmail.com
+
+2023-11-11_02:29:21 ------> ErrorUser-02 ErrorUser-02 username: prueba4@gmail.com
+
+2023-11-11_04:05:51 ------> Token expired ---> JWT expired at 2023-11-11T08:36:47Z. Current time: 2023-11-11T16:05:51Z, a difference of 26944723 milliseconds.  Allowed clock skew: 0 milliseconds.
+
+2023-11-11_04:10:48 ------> Error ---> Request processing failed; nested exception is java.lang.IllegalArgumentException: rawPassword cannot be null
+
+2023-11-11_04:11:58 ------> Error ---> Request processing failed; nested exception is java.lang.IllegalArgumentException: rawPassword cannot be null
+
+2023-11-11_06:46:02 ------> TK-001 TK-001 username: lejodurango@gmail.com
+
+2023-11-11_06:47:04 ------> Token expired ---> JWT expired at 2023-11-11T18:47:00Z. Current time: 2023-11-11T18:47:04Z, a difference of 4766 milliseconds.  Allowed clock skew: 0 milliseconds.
+
+2023-11-11_06:47:24 ------> Token expired ---> JWT expired at 2023-11-11T18:47:24Z. Current time: 2023-11-11T18:47:24Z, a difference of 933 milliseconds.  Allowed clock skew: 0 milliseconds.
+
+2023-11-11_06:49:23 ------> Token expired ---> JWT expired at 2023-11-11T18:49:03Z. Current time: 2023-11-11T18:49:23Z, a difference of 20391 milliseconds.  Allowed clock skew: 0 milliseconds.
+
+2023-11-11_06:49:25 ------> Token expired ---> JWT expired at 2023-11-11T18:49:03Z. Current time: 2023-11-11T18:49:25Z, a difference of 22249 milliseconds.  Allowed clock skew: 0 milliseconds.
+
+2023-11-11_06:49:26 ------> Token expired ---> JWT expired at 2023-11-11T18:49:03Z. Current time: 2023-11-11T18:49:26Z, a difference of 23208 milliseconds.  Allowed clock skew: 0 milliseconds.
+
+2023-11-11_06:49:27 ------> Token expired ---> JWT expired at 2023-11-11T18:49:03Z. Current time: 2023-11-11T18:49:27Z, a difference of 24151 milliseconds.  Allowed clock skew: 0 milliseconds.
+
+2023-11-11_06:52:07 ------> Token expired ---> JWT expired at 2023-11-11T08:36:47Z. Current time: 2023-11-11T18:52:07Z, a difference of 36920191 milliseconds.  Allowed clock skew: 0 milliseconds.
+
+2023-11-11_07:06:14 ------> User not Foundprueba2@gmail.com
+
+2023-11-11_07:06:51 ------> User not Foundprueba3@gmail.com
+
+2023-11-11_07:10:26 ------> ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com
+
+2023-11-11_07:11:15 ------> ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com
+
+2023-11-11_07:11:21 ------> ErrorUser-02 ErrorUser-02 username: prueba1@gmail.com
+
