@@ -1,0 +1,3 @@
+RECIBO: 2023-11-13_12:02:37 BookController Update Book APP ISBN: 531515615615641546144 sellerBook: prueba1@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
+RESPONDO: 2023-11-13_12:03:21 Book update successfully: BookEntity{ID='531515615615641546144prueba1@gmail.com', isbn='531515615615641546144', name='el arte de la guerra3', author='Alejandor Durango', category='Terror', sellerUser='prueba1@gmail.com', quality=2, price=300000, quantity=5, description='AJDJKBSA UagshabSAJGs AGSAsuy', observations='ninguna', onSale=1, urlImage='null'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
+
