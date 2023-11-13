@@ -2,6 +2,7 @@ package com.grootgeek.apibookkinder.service;
 
 import com.grootgeek.apibookkinder.entities.UserAppEntity;
 import com.grootgeek.apibookkinder.repository.UserAPPRepository;
+import com.grootgeek.apibookkinder.service.interfaces.UserAppServiceInterface;
 import com.grootgeek.apibookkinder.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +18,7 @@ import java.util.Optional;
 
 @Service
 public class UserAppService implements UserAppServiceInterface {
-    private static final Logger logger = LoggerFactory.getLogger(Utils.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserAppService.class);
     private final Utils utilLogs;
     private final UserAPPRepository userAPPRepository;
 

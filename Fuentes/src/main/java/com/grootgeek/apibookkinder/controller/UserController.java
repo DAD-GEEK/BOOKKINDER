@@ -71,7 +71,7 @@ public class UserController {
     public RespuestaApiDto<Object> authenticateUserAPP(@RequestBody UserAppEntity authenticationReq, HttpServletRequest request) {
         String logAuth;
         RespuestaApiDto<Object> response = new RespuestaApiDto<>(false, null, null);
-        utilLogs.logApi(0, "Authenticating user APP " + authenticationReq.getEmail(), AutenticationController.class.getSimpleName(), request.getRemoteAddr());
+        utilLogs.logApi(0, "Authenticating user APP " + authenticationReq.getEmail(), UserController.class.getSimpleName(), request.getRemoteAddr());
         final Boolean validatePassword = usuarioAppService.validatePassword(authenticationReq.getEmail(), authenticationReq.getPassword());
         if (validatePassword) {
             response.setSuccess(true);
@@ -93,7 +93,7 @@ public class UserController {
     public RespuestaApiDto<Object> updateUserAPP(@RequestBody UserAppEntity updateUserReq, HttpServletRequest request) {
         String logUpdate;
         RespuestaApiDto<Object> response = new RespuestaApiDto<>(false, null, null);
-        utilLogs.logApi(0, "Update user APP " + updateUserReq.getEmail(), AutenticationController.class.getSimpleName(), request.getRemoteAddr());
+        utilLogs.logApi(0, "Update user APP " + updateUserReq.getEmail(), UserController.class.getSimpleName(), request.getRemoteAddr());
         if (updateUserReq.getPassword() != null) {
             updateUserReq.setPassword(b.encode(updateUserReq.getPassword()));
         }
@@ -120,7 +120,7 @@ public class UserController {
     public RespuestaApiDto<Object> deleteUserAPP(@RequestBody UserAppEntity deleteUserReq, HttpServletRequest request) {
         String logDelete;
         RespuestaApiDto<Object> responseDelete = new RespuestaApiDto<>(false, null, null);
-        utilLogs.logApi(0, "Delete user APP " + deleteUserReq.getEmail(), AutenticationController.class.getSimpleName(), request.getRemoteAddr());
+        utilLogs.logApi(0, "Delete user APP " + deleteUserReq.getEmail(), UserController.class.getSimpleName(), request.getRemoteAddr());
         final boolean deleteUser = usuarioAppService.deleteByEmail(deleteUserReq.getEmail());
         if (deleteUser) {
             responseDelete.setSuccess(true);
@@ -142,7 +142,7 @@ public class UserController {
     public RespuestaApiDto<Object> deleteUserAPP(HttpServletRequest request) {
         String logReadAll;
         RespuestaApiDto<Object> responseReadALL = new RespuestaApiDto<>(false, null, null);
-        utilLogs.logApi(0, "Read all users APP " , AutenticationController.class.getSimpleName(), request.getRemoteAddr());
+        utilLogs.logApi(0, "Read all users APP " , UserController.class.getSimpleName(), request.getRemoteAddr());
         final List<UserAppEntity> readAllUsers = usuarioAppService.findall();
         if (readAllUsers != null) {
             readAllUsers.forEach(user -> user.setPassword("[PROTECTED]"));

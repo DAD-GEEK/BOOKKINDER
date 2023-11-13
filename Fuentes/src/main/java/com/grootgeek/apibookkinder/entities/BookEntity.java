@@ -1,5 +1,6 @@
 package com.grootgeek.apibookkinder.entities;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -10,6 +11,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "BOOKS_BOOKKINDER", schema = "ADMIN")
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class BookEntity {
 
     @Id
@@ -26,20 +28,37 @@ public class BookEntity {
     @Column
     private String sellerUser;
     @Column
-    private float Quality;
+    private String quality;
     @Column
-    private int price;
+    private String price;
     @Column
-    private int quantity;
+    private String quantity;
     @Column
     private String description;
     @Column
     private String observations;
     @Column
-    private Boolean OnSale;
+    private String onSale;
+    @Column
+    private String urlImage;
 
-    public BookEntity() {
-        super();
+    public BookEntity() {super();
+    }
+
+    public BookEntity(String ID, String isbn, String name, String author, String category, String sellerUser, String quality, String price, String quantity, String description, String observations, String onSale, String urlImage) {
+        this.ID = ID;
+        this.isbn = isbn;
+        this.name = name;
+        this.author = author;
+        this.category = category;
+        this.sellerUser = sellerUser;
+        this.quality = quality;
+        this.price = price;
+        this.quantity = quantity;
+        this.description = description;
+        this.observations = observations;
+        this.onSale = onSale;
+        this.urlImage = urlImage;
     }
 
     @Override
@@ -51,12 +70,13 @@ public class BookEntity {
                 ", author='" + author + '\'' +
                 ", category='" + category + '\'' +
                 ", sellerUser='" + sellerUser + '\'' +
-                ", Quality=" + Quality +
+                ", quality=" + quality +
                 ", price=" + price +
                 ", quantity=" + quantity +
                 ", description='" + description + '\'' +
                 ", observations='" + observations + '\'' +
-                ", OnSale=" + OnSale +
+                ", onSale=" + onSale +
+                ", urlImage='" + urlImage + '\'' +
                 '}';
     }
 }

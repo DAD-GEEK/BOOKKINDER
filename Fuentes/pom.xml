@@ -8,7 +8,7 @@
         <version>2.7.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.grootgeek</groupId>
+    <groupId>com.grootgeek.apibook</groupId>
     <artifactId>ApiBookKinder</artifactId>
     <version>1.0.0</version>
 

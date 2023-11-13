@@ -1,5 +1,6 @@
 package com.grootgeek.apibookkinder.entities;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,6 +12,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name= "BD_APIBOOKKINDER", schema = "ADMIN")
 @Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserAPIEntity {
 
 	@Id

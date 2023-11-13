@@ -1,0 +1,26 @@
+2023-11-13_01:21:01 ------> Error obteniendo Info Google BOOKS ISBN: 9780807286005A JSONObject text must end with '}' at 1 [character 2 line 1]
+
+2023-11-13_01:21:18 ------> Error ---> Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.grootgeek.apibookkinder.entities.BookEntity.getID()" because "bookmarked" is null
+
+2023-11-13_01:22:16 ------> Error obteniendo Info Google BOOKS ISBN: 9780807286005A JSONObject text must end with '}' at 1 [character 2 line 1]
+
+2023-11-13_01:22:16 ------> Error ---> Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.grootgeek.apibookkinder.entities.BookEntity.getID()" because "bookmarked" is null
+
+2023-11-13_01:22:33 ------> Error obteniendo Info Google BOOKS ISBN: 9780807286005A JSONObject text must end with '}' at 1 [character 2 line 1]
+
+2023-11-13_01:22:35 ------> Error ---> Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.grootgeek.apibookkinder.entities.BookEntity.getID()" because "bookmarked" is null
+
+2023-11-13_01:23:09 ------> Error obteniendo Info Google BOOKS ISBN: 9780807286005A JSONObject text must end with '}' at 1 [character 2 line 1]
+
+2023-11-13_01:23:09 ------> Error ---> Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.grootgeek.apibookkinder.entities.BookEntity.getID()" because "bookmarked" is null
+
+2023-11-13_01:48:21 ------> Error obteniendo Info Google BOOKS ISBN: 9780807286005A JSONObject text must end with '}' at 1 [character 2 line 1]
+
+2023-11-13_01:48:21 ------> Error ---> Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.grootgeek.apibookkinder.entities.BookEntity.getID()" because "bookmarked" is null
+
+2023-11-13_01:52:52 ------> Error obteniendo Info Google BOOKS ISBN: 9780807286005A JSONObject text must end with '}' at 1 [character 2 line 1]
+
+2023-11-13_01:52:52 ------> Error ---> Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.grootgeek.apibookkinder.entities.BookEntity.getID()" because "bookmarked" is null
+
+2023-11-13_01:57:57 ------> Books not Found for ISBN 9788498382662 SellerUser: prueba1@gmail.com
+

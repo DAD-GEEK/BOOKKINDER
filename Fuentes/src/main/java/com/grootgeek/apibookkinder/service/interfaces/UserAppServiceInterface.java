@@ -1,4 +1,4 @@
-package com.grootgeek.apibookkinder.service;
+package com.grootgeek.apibookkinder.service.interfaces;
 
 import com.grootgeek.apibookkinder.entities.UserAppEntity;
 
