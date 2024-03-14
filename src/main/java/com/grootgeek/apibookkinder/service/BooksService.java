@@ -210,7 +210,7 @@ public class BooksService implements BooksServiceInterface {
         return response;
     }
 
-    private HttpsURLConnection generateConnection(String urls) throws IOException {
+    public HttpsURLConnection generateConnection(String urls) throws IOException {
         URL url = new URL(urls.trim());
         HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
         connection.setConnectTimeout(timeout);
@@ -219,7 +219,7 @@ public class BooksService implements BooksServiceInterface {
         return connection;
     }
 
-    private JSONObject response(HttpsURLConnection connections, int code) {
+    public JSONObject response(HttpsURLConnection connections, int code) {
         JSONObject jsResponse = null;
         StringBuilder resultado = new StringBuilder();
         String response;
