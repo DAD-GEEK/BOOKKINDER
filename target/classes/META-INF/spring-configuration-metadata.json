@@ -1,0 +1,12 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.grootgeek.apibookkinder.config.ConfigHibernateOracle",
+      "sourceMethod": "public javax.sql.DataSource dataSourceOracle() "
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

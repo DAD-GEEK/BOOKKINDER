@@ -5,6 +5,8 @@ Fuentes/target/
 !**/src/test/**/target/
 Logs-APIBancoOauth
 Compilado
+.scannerwork
+target/
 
 ### STS ###
 .apt_generated
