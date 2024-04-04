@@ -1,9 +1,10 @@
 HELP.md
-target/
+Fuentes/target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 Logs-APIBancoOauth
+Compilado
 
 ### STS ###
 .apt_generated

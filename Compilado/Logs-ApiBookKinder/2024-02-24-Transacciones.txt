@@ -1,4 +1,0 @@
-RECIBO: 2024-02-24_04:20:59 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
-RESPONDO: 2024-02-24_04:21:00 Token created successfully: TokenResponseDto{typetoken='Bearer', jwtToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE3MDg4Mzk2NjAsImlhdCI6MTcwODgwOTY2MCwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.OjTAvSnRqUv1_0C9KDlPb7DyJW8N-TpDQ80f5HejRuY'}  IP_CONSUMO: 0:0:0:0:0:0:0:1
-
-RECIBO: 2024-02-24_04:59:56 AutenticationController Autenticando al usuario lejodurango@gmail.com IP_CONSUMO: 0:0:0:0:0:0:0:1
