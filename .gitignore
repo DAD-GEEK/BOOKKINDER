@@ -6,7 +6,6 @@ Fuentes/target/
 Logs-APIBancoOauth
 Compilado
 .scannerwork
-target/
 
 ### STS ###
 .apt_generated
@@ -18,7 +17,6 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
 *.iws
 *.iml
 *.ipr
@@ -34,4 +32,5 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
-.vscode/
+/.idea/
+/.vscode/

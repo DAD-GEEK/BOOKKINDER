@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.grootgeek.apibookkinder.controller.AbstractControllerTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.652 s <<< FAILURE! - in com.grootgeek.apibookkinder.controller.AbstractControllerTest
-inicio  Time elapsed: 0.012 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtRequestFilter' defined in file [D:\University\GIT\ApiBookKInder\Fuentes\target\classes\com\grootgeek\apibookkinder\config\jwtconfig\JwtRequestFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.grootgeek.apibookkinder.service.UsuarioDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.grootgeek.apibookkinder.service.UsuarioDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-
