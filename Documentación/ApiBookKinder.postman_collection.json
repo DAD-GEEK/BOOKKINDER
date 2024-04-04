@@ -1,0 +1,791 @@
+{
+	"info": {
+		"_postman_id": "19f6ff0b-69f6-40b7-93f6-b691afec65bb",
+		"name": "ApiBookKinder Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15716213"
+	},
+	"item": [
+		{
+			"name": "UserAPI",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"lejodurango@gmail.com\",\r\n    \"password\":\"i96/x0rqiJ8m\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/publico/authenticate",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"publico",
+								"authenticate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cloud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\":\"lejodurango@gmail.com\",\r\n    \"password\":\"i96/x0rqiJ8m\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apibookinder-cloud}}/publico/authenticate",
+									"host": [
+										"{{apibookinder-cloud}}"
+									],
+									"path": [
+										"publico",
+										"authenticate"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "ValidateToken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE3MDk2ODIzODIsImlhdCI6MTcwOTY1MjM4MiwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.oj6zbFEXW4A7FdjkBQXK7-mvjABZD98l5bc1BDYcjCw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/ValidateToken",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"ValidateToken"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cloud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apibookinder-cloud}}/ValidateToken",
+									"host": [
+										"{{apibookinder-cloud}}"
+									],
+									"path": [
+										"ValidateToken"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "UserAPP",
+			"item": [
+				{
+					"name": "NewUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE3MDg4NDE1MDcsImlhdCI6MTcwODgxMTUwNywiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.eNrhQpp9yZmKu0N7K0ZPKAA_UqOYCPoeGwW-VDGdeS4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba1aaa0@gmail.com\",\r\n    \"password\": \"4rT7S#mU2)Wz\",\r\n    \"name\": \"prueba\",\r\n    \"lastName\": \"2\",\r\n    \"phone\": \"54561516\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/user/new",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"user",
+								"new"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cloud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"prueba1aaa0@gmail.com\",\r\n    \"password\": \"4rT7S#mU2)Wz\",\r\n    \"name\": \"prueba\",\r\n    \"lastName\": \"2\",\r\n    \"phone\": \"54561516\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apibookinder-cloud}}/user/new",
+									"host": [
+										"{{apibookinder-cloud}}"
+									],
+									"path": [
+										"user",
+										"new"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE3MDAxNzc3ODEsImlhdCI6MTcwMDE0Nzc4MSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.Wtr427nETd6Nuh_u7UQOzqiVs5fZgiVm85aqN2g-byE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba15@gmail.com\",\r\n    \"password\": \"4rT7S#sdadasdasd)Wz\",\r\n    \"name\": \"ALejandro\",\r\n    \"lastName\": \"nsajsjas\",\r\n    \"phone\": \"11asasas656184\",\r\n    \"role\": \"0\",\r\n    \"rating\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/user/update",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cloud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"prueba15@gmail.com\",\r\n    \"password\": \"4rT7S#sdadasdasd)Wz\",\r\n    \"name\": \"ALejandro\",\r\n    \"lastName\": \"nsajsjas\",\r\n    \"phone\": \"11asasas656184\",\r\n    \"role\": \"0\",\r\n    \"rating\":\"2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apibookinder-cloud}}/user/update",
+									"host": [
+										"{{apibookinder-cloud}}"
+									],
+									"path": [
+										"user",
+										"update"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE3MDAxNzc3ODEsImlhdCI6MTcwMDE0Nzc4MSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.Wtr427nETd6Nuh_u7UQOzqiVs5fZgiVm85aqN2g-byE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba3@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/user/delete",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"user",
+								"delete"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cloud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"prueba3@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apibookinder-local}}/user/delete",
+									"host": [
+										"{{apibookinder-local}}"
+									],
+									"path": [
+										"user",
+										"delete"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "ReadAllUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE3MDg0MTE5MDIsImlhdCI6MTcwODM4MTkwMiwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.0Chm5m-RiAl8lRgqCvFINxpP0x1yOyk2xySilHyGrwY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-cloud}}/user/read/all",
+							"host": [
+								"{{apibookinder-cloud}}"
+							],
+							"path": [
+								"user",
+								"read",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cloud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apibookinder-cloud}}/user/read/all",
+									"host": [
+										"{{apibookinder-cloud}}"
+									],
+									"path": [
+										"user",
+										"read",
+										"all"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "UserAuthenticate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE3MDAxNzc3ODEsImlhdCI6MTcwMDE0Nzc4MSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.Wtr427nETd6Nuh_u7UQOzqiVs5fZgiVm85aqN2g-byE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"prueba2@gmail.com\",\r\n    \"password\": \"4rT7S#mU2)Wz\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/user/authenticate",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"user",
+								"authenticate"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cloud",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"prueba2@gmail.com\",\r\n    \"password\": \"4rT7S#mU2)Wz\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{apibookinder-cloud}}/user/authenticate",
+									"host": [
+										"{{apibookinder-cloud}}"
+									],
+									"path": [
+										"user",
+										"authenticate"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BOOKS",
+			"item": [
+				{
+					"name": "NewBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk5NTg5MDIsImlhdCI6MTY5OTkyODkwMiwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.lwW_4P0pMCSg25RHpLsqRQetgfxHSRLEhp3_usMoiPY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sellerUser\": \"prueba2@gmail.com\",\r\n    \"quality\": \"2\",\r\n    \"price\": \"25500\",\r\n    \"quantity\": \"5\",\r\n    \"observations\": \"ninguna\",\r\n    \"onSale\": \"1\",\r\n    \"isbn\": \"97884983826622\",\r\n    \"name\": \"Harry Potter and the philosopher's stone\",\r\n    \"author\": \"J. K. Rowling\",\r\n    \"category\": \"Juvenile Fiction\",\r\n    \"description\": \"Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y se hará un puñado de buenos amigos... aunque también algunos temibles enemigos. Pero sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago! (Source : 4e de couverture)\",\r\n    \"urlImage\": \"http://books.google.com/books/content?id=p3QQjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/book/new",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"book",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk4NTkxNDgsImlhdCI6MTY5OTgyOTE0OCwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.iLHUePqdIozK_dEdoZZNkNxcfUpLgHoMsFCwwO82QLU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isbn\": \"531515615615641546144\",\r\n    \"sellerUser\": \"prueba1@gmail.com\",\r\n    \"name\": \"el arte de la guerra3\",\r\n    \"author\": \"Alejandor Durango\",\r\n    \"category\": \"Terror\",\r\n    \"quality\": \"2\",\r\n    \"price\": \"300000\",        \r\n    \"quantity\": \"5\",\r\n    \"description\": \"AJDJKBSA UagshabSAJGs AGSAsuy\",\r\n    \"observations\": \"ninguna\",\r\n    \"onSale\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/book/update",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"book",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk4NTkxNDgsImlhdCI6MTY5OTgyOTE0OCwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.iLHUePqdIozK_dEdoZZNkNxcfUpLgHoMsFCwwO82QLU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isbn\": \"531515615615641546144\",\r\n    \"sellerUser\": \"prueba1@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/book/delete",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"book",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "readAllBook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE2OTk4NTkxNDgsImlhdCI6MTY5OTgyOTE0OCwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.iLHUePqdIozK_dEdoZZNkNxcfUpLgHoMsFCwwO82QLU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/book/read/all",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"book",
+								"read",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchDataISBN",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsZWpvZHVyYW5nb0BnbWFpbC5jb20iLCJleHAiOjE3MDAxNzc3ODEsImlhdCI6MTcwMDE0Nzc4MSwiQXBwTmFtZSI6IkFwaUJvb2tLaW5kZXIifQ.Wtr427nETd6Nuh_u7UQOzqiVs5fZgiVm85aqN2g-byE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isbn\": \"9788498382662\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{apibookinder-local}}/book/search/isbn",
+							"host": [
+								"{{apibookinder-local}}"
+							],
+							"path": [
+								"book",
+								"search",
+								"isbn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchGoogleAPI",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.googleapis.com/books/v1/volumes?q=isbn:9788498382662",
+							"protocol": "https",
+							"host": [
+								"www",
+								"googleapis",
+								"com"
+							],
+							"path": [
+								"books",
+								"v1",
+								"volumes"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "isbn:9788498382662"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{apibookinder-cloud}",
+					"host": [
+						"{{apibookinder-cloud}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Welcome",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{apibookinder-cloud}}",
+							"host": [
+								"{{apibookinder-cloud}}"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apibookinder-cloud",
+			"value": "http://204.236.200.68:8082/ApiBookKinder"
+		},
+		{
+			"key": "apibookinder-local",
+			"value": "http://localhost:8082/ApiBookKinder",
+			"type": "string"
+		}
+	]
+}
