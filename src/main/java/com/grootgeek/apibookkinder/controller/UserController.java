@@ -1,7 +1,6 @@
 package com.grootgeek.apibookkinder.controller;
 
 import com.grootgeek.apibookkinder.dto.ResponseApiDto;
-import com.grootgeek.apibookkinder.dto.UserAppDto;
 import com.grootgeek.apibookkinder.entities.UserAppEntity;
 import com.grootgeek.apibookkinder.service.UserAppService;
 import com.grootgeek.apibookkinder.utils.Logger;
@@ -37,7 +36,7 @@ public class UserController {
     }
 
     @PostMapping("/user/new")
-    public ResponseApiDto<Object> newUser(@RequestBody UserAppDto newUserReq, HttpServletRequest request) {
+    public ResponseApiDto<Object> newUser(@RequestBody UserAppEntity newUserReq, HttpServletRequest request) {
         String log;
         ResponseApiDto<Object> responseNewUser = new ResponseApiDto<>();
         utilLogs.logApi(0, "Create user APP " + newUserReq.getEmail(), UserController.class.getSimpleName(), request.getRemoteAddr());
@@ -66,7 +65,7 @@ public class UserController {
     }
 
     @PostMapping("/user/authenticate")
-    public ResponseApiDto<Object> authenticateUserAPP(@RequestBody UserAppDto authenticationReq, HttpServletRequest request) {
+    public ResponseApiDto<Object> authenticateUserAPP(@RequestBody UserAppEntity authenticationReq, HttpServletRequest request) {
         String logAuthUserAPP;
         ResponseApiDto<Object> responseAuth = new ResponseApiDto<>();
         utilLogs.logApi(0, "Authenticating user APP " + authenticationReq.getEmail(), UserController.class.getSimpleName(), request.getRemoteAddr());
@@ -84,7 +83,7 @@ public class UserController {
     }
 
     @PostMapping("/user/update")
-    public ResponseApiDto<Object> updateUserAPP(@RequestBody UserAppDto updateUserReq, HttpServletRequest request) {
+    public ResponseApiDto<Object> updateUserAPP(@RequestBody UserAppEntity updateUserReq, HttpServletRequest request) {
         String logUpdateUserApp;
         ResponseApiDto<Object> responseUpdateUserApp = new ResponseApiDto<>();
         utilLogs.logApi(0, "Update user APP " + updateUserReq.getEmail(), UserController.class.getSimpleName(), request.getRemoteAddr());
@@ -104,7 +103,7 @@ public class UserController {
     }
 
     @PostMapping("/user/delete")
-    public ResponseApiDto<Object> readAllUserAPP(@RequestBody UserAppDto deleteUserReq, HttpServletRequest request) {
+    public ResponseApiDto<Object> readAllUserAPP(@RequestBody UserAppEntity deleteUserReq, HttpServletRequest request) {
         String logDeleteUserApp;
         ResponseApiDto<Object> responseDeleteUserApp = new ResponseApiDto<>();
         utilLogs.logApi(0, "Delete user APP " + deleteUserReq.getEmail(), UserController.class.getSimpleName(), request.getRemoteAddr());

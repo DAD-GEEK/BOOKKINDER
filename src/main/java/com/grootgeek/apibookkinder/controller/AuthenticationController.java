@@ -2,7 +2,7 @@ package com.grootgeek.apibookkinder.controller;
 
 import com.grootgeek.apibookkinder.dto.ResponseApiDto;
 import com.grootgeek.apibookkinder.dto.TokenResponseDto;
-import com.grootgeek.apibookkinder.dto.UserAPiDto;
+import com.grootgeek.apibookkinder.entities.UserAPIEntity;
 import com.grootgeek.apibookkinder.service.JwtUtilService;
 import com.grootgeek.apibookkinder.service.UsuarioDetailsService;
 import com.grootgeek.apibookkinder.utils.Logger;
@@ -35,7 +35,7 @@ public class AuthenticationController {
 
     }
     @PostMapping("/publico/authenticate")
-    public ResponseApiDto<Object> authenticate(@RequestBody UserAPiDto authenticationReq, HttpServletRequest request) {
+    public ResponseApiDto<Object> authenticate(@RequestBody UserAPIEntity authenticationReq, HttpServletRequest request) {
         String logAuthenticate;
         ResponseApiDto<Object> response = new ResponseApiDto<>();
         utilLogs.logApi(0, "Autenticando al usuario " + authenticationReq.getUserName(), AuthenticationController.class.getSimpleName(), request.getRemoteAddr());
