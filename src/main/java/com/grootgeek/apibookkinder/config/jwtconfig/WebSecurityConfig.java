@@ -16,11 +16,11 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
-
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
 public class WebSecurityConfig {
-
+    private final JwtRequestFilter jwtRequestFilter;
+    private final PasswordEncoderService pwEncoderService;
 
     public WebSecurityConfig(JwtRequestFilter jwtRequestFilter, PasswordEncoderService pwEncoderService) {
         this.jwtRequestFilter = jwtRequestFilter;
@@ -37,8 +37,6 @@ public class WebSecurityConfig {
                 .build();
     }
 
-    private final JwtRequestFilter jwtRequestFilter;
-    private final PasswordEncoderService pwEncoderService;
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfiguration) throws Exception {
@@ -65,5 +63,5 @@ public class WebSecurityConfig {
 
         return http.build();
     }
+    
 }
-
