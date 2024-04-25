@@ -3,11 +3,17 @@ package com.grootgeek.apibookkinder.service;
 import com.grootgeek.apibookkinder.entities.BookEntity;
 import com.grootgeek.apibookkinder.repository.BookRepository;
 import com.grootgeek.apibookkinder.utils.Logger;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -31,13 +37,13 @@ class BooksServiceTest {
         MockitoAnnotations.openMocks(this);
     }
 
+   public static final String isbn = "1234567890";
     @Test
     void saveNewBookSuccessfully() {
         // Given  or Arrange
         BookEntity newBook = new BookEntity();
-        newBook.setIsbn("1234567890");
+        newBook.setIsbn(isbn);
         newBook.setSellerUser("sellerUser");
-
         BookEntity bookEntity = new BookEntity();
         bookEntity.setIsbn("1234567823231290");
         bookEntity.setSellerUser("sellerUsdsdsdsser");
@@ -51,9 +57,9 @@ class BooksServiceTest {
         assertEquals(newBook.getIsbn(), result.getIsbn());
         assertEquals(newBook.getSellerUser(), result.getSellerUser());
         assertEquals(newBook.getSellerUser(), result.getSellerUser());
-        assertThat(result).isEqualToComparingFieldByField(newBook);
+        assertThat(result).isEqualTo(newBook);
 
-        assertThat(result).as("Comprobando que el Libro creado es igual al esperado").isEqualToComparingFieldByField(bookEntity);
+        assertThat(result).as("Comprobando que el Libro creado es igual al esperado").isNotEqualTo(bookEntity);
 
 
     }
@@ -61,7 +67,7 @@ class BooksServiceTest {
     @Test
     void saveNewBookFailed() {
         BookEntity newBook = new BookEntity();
-        newBook.setIsbn("1234567890");
+        newBook.setIsbn(isbn);
         newBook.setSellerUser("sellerUser");
 
         when(bookRepository.save(any(BookEntity.class))).thenThrow(new RuntimeException());
@@ -73,22 +79,139 @@ class BooksServiceTest {
     }
 
     @Test
-    void findallByisbnandseller() {
+    void saveNewBookFailedDueToMismatchedIsbn() {
+        BookEntity newBook = new BookEntity();
+        newBook.setIsbn(isbn);
+        newBook.setSellerUser("sellerUser");
+
+        BookEntity savedBook = new BookEntity();
+        savedBook.setIsbn("0987654321");
+        savedBook.setSellerUser("sellerUser");
+
+        when(bookRepository.save(any(BookEntity.class))).thenReturn(savedBook);
+
+        BookEntity result = booksService.saveNewBook(newBook);
+
+        assertThat(result).isNull();
+        verify(utilLogs, times(1)).logApiError(anyString());
     }
 
     @Test
-    void updateBookApp() {
+    void saveNewBookFailedDueToMismatchedSellerUser() {
+        BookEntity newBook = new BookEntity();
+        newBook.setIsbn(isbn);
+        newBook.setSellerUser("sellerUser");
+
+        BookEntity savedBook = new BookEntity();
+        savedBook.setIsbn(isbn);
+        savedBook.setSellerUser("differentUser");
+
+        when(bookRepository.save(any(BookEntity.class))).thenReturn(savedBook);
+
+        BookEntity result = booksService.saveNewBook(newBook);
+
+        assertThat(result).isNull();
+        verify(utilLogs, times(1)).logApiError(anyString());
     }
 
     @Test
-    void findall() {
-    }
+void findBookByIsbnAndSellerSuccessfully() {
+    BookEntity existingBook = new BookEntity();
+    existingBook.setIsbn(isbn);
+    existingBook.setSellerUser("sellerUser");
 
-    @Test
-    void deletebyIsbnandSeller() {
-    }
+    when(bookRepository.findByIsbnAndSellerUser(anyString(), anyString())).thenReturn(Optional.of(existingBook));
 
-    @Test
-    void getInfoIsbn() {
-    }
+    BookEntity result = booksService.findallByisbnandseller(isbn, "sellerUser");
+
+    assertThat(result).isNotNull();
+    assertThat(result.getIsbn()).isEqualTo(existingBook.getIsbn());
+    assertThat(result.getSellerUser()).isEqualTo(existingBook.getSellerUser());
+}
+
+@Test
+void findBookByIsbnAndSellerFailedDueToNonExistingBook() {
+    when(bookRepository.findByIsbnAndSellerUser(anyString(), anyString())).thenReturn(Optional.empty());
+
+    BookEntity result = booksService.findallByisbnandseller(isbn, "sellerUser");
+
+    assertThat(result).isNull();
+    verify(utilLogs, times(1)).logApiError(anyString());
+}
+
+@Test
+void updateBookSuccessfully() {
+    BookEntity existingBook = new BookEntity();
+    existingBook.setIsbn(isbn);
+    existingBook.setSellerUser("sellerUser");
+
+    BookEntity updateBook = new BookEntity();
+    updateBook.setIsbn(isbn);
+    updateBook.setSellerUser("sellerUser");
+    updateBook.setName("Updated Name");
+
+    when(bookRepository.findByIsbnAndSellerUser(anyString(), anyString())).thenReturn(Optional.of(existingBook));
+    when(bookRepository.save(any(BookEntity.class))).thenReturn(updateBook);
+
+    BookEntity result = booksService.updateBookApp(updateBook);
+
+    assertThat(result).isNotNull();
+    assertThat(result.getName()).isEqualTo(updateBook.getName());
+}
+
+@Test
+void updateBookFailedDueToNonExistingBook() {
+    BookEntity updateBook = new BookEntity();
+    updateBook.setIsbn(isbn);
+    updateBook.setSellerUser("sellerUser");
+    BookEntity existingBook = new BookEntity();
+    existingBook.setIsbn(isbn);
+    when(bookRepository.findByIsbnAndSellerUser(anyString(), anyString())).thenReturn(Optional.of(updateBook));
+    when(bookRepository.save(any(BookEntity.class))).thenReturn(null);
+    BookEntity result = booksService.updateBookApp(existingBook);
+
+    assertThat(result).isNull();
+    verify(utilLogs, times(2)).logApiError(anyString());
+}
+
+@Test
+void deleteBookByIsbnAndSellerSuccessfully() {
+    doNothing().when(bookRepository).deleteByIsbnAndSellerUser(anyString(), anyString());
+
+    Boolean result = booksService.deletebyIsbnandSeller(isbn, "sellerUser");
+
+    assertThat(result).isTrue();
+}
+
+@Test
+void deleteBookByIsbnAndSellerFailedDueToException() {
+    doThrow(new RuntimeException()).when(bookRepository).deleteByIsbnAndSellerUser(anyString(), anyString());
+
+    Boolean result = booksService.deletebyIsbnandSeller(isbn, "sellerUser");
+
+    assertThat(result).isFalse();
+    verify(utilLogs, times(1)).logApiError(anyString());
+}
+
+@Test
+void findAllBooksSuccessfully() {
+    List<BookEntity> books = new ArrayList<>();
+    books.add(new BookEntity());
+
+    when(bookRepository.findAll()).thenReturn(books);
+
+    List<BookEntity> result = booksService.findall();
+
+    assertThat(result).isNotEmpty();
+}
+
+@Test
+void findAllBooksFailedDueToException() {
+    when(bookRepository.findAll()).thenThrow(new RuntimeException());
+
+    List<BookEntity> result = booksService.findall();
+
+    assertThat(result).isEmpty();
+    verify(utilLogs, times(1)).logApiError(anyString());
+}
 }

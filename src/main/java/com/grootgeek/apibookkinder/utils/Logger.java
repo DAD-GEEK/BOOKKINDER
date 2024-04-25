@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 @SuppressWarnings("ResultOfMethodCallIgnored")
 @Component
 public class Logger {
-    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(Logger.class);
+    private static final org.slf4j.Logger logs = LoggerFactory.getLogger(Logger.class);
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd_hh:mm:ss");
     private final String fecha = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
@@ -35,7 +35,7 @@ public class Logger {
         } catch (Exception e) {
             message = "Error Utils: fall in logs ";
             logApiError("Error to save the log" + message);
-            logger.error(e.getMessage(), e);
+            logs.error(e.getMessage(), e);
         }
     }
 

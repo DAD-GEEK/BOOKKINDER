@@ -1,7 +1,6 @@
 package com.grootgeek.apibookkinder.dto;
 
 
-import java.time.format.DateTimeFormatter;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -10,7 +9,6 @@ import lombok.Data;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResponseApiDto<T> {
 
-    private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm");
     private boolean success;
     private String code;
     private String dateTime;

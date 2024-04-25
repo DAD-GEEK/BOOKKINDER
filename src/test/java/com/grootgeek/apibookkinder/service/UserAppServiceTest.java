@@ -31,15 +31,15 @@ class UserAppServiceTest {
 
     @Test
     void saveNewUser() {
-        // Arrange
+        // Arrange or Given
         UserAppEntity newUser = new UserAppEntity();
         newUser.setEmail("user@example.com");
         when(userAPPRepositoryMock.save(any(UserAppEntity.class))).thenReturn(newUser);
 
-        // Act
+        // Act or Then
         UserAppEntity result = userAppService.saveNewUser(newUser);
 
-        // Assert
+        // Assert or Than
         assertNotNull(result);
         assertThat(result).isEqualTo(newUser);
     }

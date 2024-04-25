@@ -84,6 +84,10 @@ public class BooksService implements BooksServiceInterface {
     @Override
     public BookEntity updateBookApp(BookEntity updateBookApp) {
         BookEntity bookUpdate = findallByisbnandseller(updateBookApp.getIsbn(), updateBookApp.getSellerUser());
+        if (bookUpdate == null) {
+            utilLogs.logApiError("Error Update  Book " + updateBookApp.getIsbn() + sellerBook + updateBookApp.getSellerUser());
+            return null;
+        }
         updateIfNotNullOrEmpty(bookUpdate::setId, updateBookApp.getId());
         updateIfNotNullOrEmpty(bookUpdate::setIsbn, updateBookApp.getIsbn());
         updateIfNotNullOrEmpty(bookUpdate::setName, updateBookApp.getName());
@@ -175,7 +179,7 @@ public class BooksService implements BooksServiceInterface {
         return null;
     }
 
-    private HttpsURLConnection generateConnection(String urls) throws IOException {
+    HttpsURLConnection generateConnection(String urls) throws IOException {
         URL url = new URL(urls.trim());
         HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
         connection.setConnectTimeout(timeout);
@@ -184,7 +188,7 @@ public class BooksService implements BooksServiceInterface {
         return connection;
     }
 
-    private JSONObject response(HttpsURLConnection connections, int code) {
+    JSONObject response(HttpsURLConnection connections, int code) {
         JSONObject jsResponse = null;
         StringBuilder resultado = new StringBuilder();
         String response;
