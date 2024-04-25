@@ -1,24 +1,34 @@
-# BOOKKINDER
+# API BookKinder
 
-## Description
+## Descripción
 
+API BookKinder es una aplicación Spring Boot que proporciona una API REST para la gestión de bibliotecas. Esta API permite a los usuarios rastrear y organizar sus libros.
 
-## Installation
+## Instalación
 
-Describe the steps required to install and set up your project.
+1. Clona este repositorio en tu máquina local usando `git clone https://github.com/yourusername/api-bookkinder.git`
+2. Navega a la carpeta del proyecto usando `cd api-bookkinder`
+3. Compila el proyecto usando `mvn clean install`
+4. Inicia la aplicación usando `java -jar target/api-bookkinder-0.0.1-SNAPSHOT.jar`
 
-## Usage
+## Uso
 
-Explain how to use your project and provide examples if necessary.
+Para usar API BookKinder, puedes hacer solicitudes HTTP a los diferentes endpoints proporcionados por la API. Por ejemplo, puedes obtener una lista de todos los libros con una solicitud GET a `/books`, o puedes agregar un nuevo libro con una solicitud POST a `/books`.
 
-## Contributing
+## Contribución
 
-Specify guidelines for contributing to your project, if applicable.
+Las contribuciones son bienvenidas. Para contribuir:
 
-## License
+1. Haz un fork del proyecto
+2. Crea tu feature branch (`git checkout -b feature/AmazingFeature`)
+3. Haz commit de tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Haz push a tu branch (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-Include information about the license under which your project is distributed.
+## Licencia
 
-## Contact
+Este proyecto está licenciado bajo la licencia MIT.
 
-Provide contact information for users to reach out to you with questions or feedback.
+## Contacto
+
+Si tienes alguna pregunta o comentario, no dudes en contactarnos a través de [email](mailto:your-email@example.com).
