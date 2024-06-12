@@ -10,6 +10,7 @@ import java.util.Optional;
 @Repository
 @Transactional
 public interface UserAPPRepository extends JpaRepository<UserAppEntity, Integer> {
+
     Optional<UserAppEntity> findByEmail(String email);
     void deleteByEmail(String email);
     }
