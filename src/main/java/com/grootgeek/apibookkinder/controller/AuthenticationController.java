@@ -9,10 +9,7 @@ import com.grootgeek.apibookkinder.utils.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -37,6 +34,30 @@ public class AuthenticationController {
     @PostMapping("/publico/authenticate")
     public ResponseApiDto<Object> authenticate(@RequestBody UserAPIEntity authenticationReq, HttpServletRequest request) {
         String logAuthenticate;
+        ResponseApiDto<Object> response = new ResponseApiDto<>();
+        utilLogs.logApi(0, "Autenticando al usuario " + authenticationReq.getUserName(), AuthenticationController.class.getSimpleName(), request.getRemoteAddr());
+        final Boolean validatePassword = usuarioDetailsService.validatePassword(authenticationReq.getUserName(), authenticationReq.getPassword());
+        final UserDetails userDetails = usuarioDetailsService.loadUserByUsername(authenticationReq.getUserName());
+        if (Boolean.TRUE.equals(validatePassword) && userDetails != null) {
+            final String jwt = jwtUtilService.generateToken(userDetails);
+            TokenResponseDto tokenInfo = new TokenResponseDto(typeToken, jwt);
+            response.responseSuccess(true, "000", "Token created successfully", tokenInfo);
+            logAuthenticate = response.getMessage() + ": " + response.getData() + " ";
+        } else {
+            response.responseError(false, "AUTH-001", "Incorrect user or password");
+            logAuthenticate = response.getCode() + " " + response.getMessage() + " username: " + authenticationReq.getUserName();
+            utilLogs.logApiError(logAuthenticate);
+        }
+        utilLogs.logApi(1, logAuthenticate, AuthenticationController.class.getSimpleName(), request.getRemoteAddr());
+        return response;
+    }
+
+    @GetMapping("/publico/authenticate")
+    public ResponseApiDto<Object> authenticatetwo(HttpServletRequest request) {
+        String logAuthenticate;
+        UserAPIEntity authenticationReq = new UserAPIEntity();
+        authenticationReq.setUserName("lejodurango@gmail.com");
+        authenticationReq.setPassword("i96/x0rqiJ8m");
         ResponseApiDto<Object> response = new ResponseApiDto<>();
         utilLogs.logApi(0, "Autenticando al usuario " + authenticationReq.getUserName(), AuthenticationController.class.getSimpleName(), request.getRemoteAddr());
         final Boolean validatePassword = usuarioDetailsService.validatePassword(authenticationReq.getUserName(), authenticationReq.getPassword());
